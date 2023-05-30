@@ -1,0 +1,75 @@
+.header-div{
+    display:flex;
+    background-color: red;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+}
+.header-div h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.pesquisa{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 2px;
+}
+.btn-pesquisa{
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barra-pesquisa{
+    width: 500px;
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+    background-color: #fff;
+}
+.img-pesquisa{
+    width: 85%;
+    height: 85%;
+}
+
+.container-cards{
+    display: flex;
+    height: 500px;
+    background-color: rgb(111, 0, 0);
+    justify-content: space-evenly;
+}
+.coluna-cards{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    height: 150px;
+    width: 350px;
+    display: flex;
+    background-color: white;
+    margin: 10px;
+}
+
+.container{
+    display: flex;
+    height: 300px;
+    background-color: rgb(111, 0, 0);
+    justify-content: center;
+}
+.img-logo{
+    height: 100%;
+}
+.div-footer{
+    display: flex;
+    background-color: aqua;
+    height: 200px;
+}
+
