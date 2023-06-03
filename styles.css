@@ -1,75 +1,157 @@
 .header-div{
     display:flex;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    height: 200px;
+    height: 150px;
+    z-index: 900;
 }
+
 .header-div h1{
     font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:darkgreen;
+    font-family:'Montserrat', sans-serif;
+    margin-top: 110px;
+    margin-bottom: 50px;
+    font-weight: 900;
+    font-size: 70px;
 }
-.pesquisa{
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    height: 30px;
+.pesquisa {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.pesquisa-input {
+    padding-right: 430px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 15px;
     border-radius: 5px;
-    border: 1px solid grey;
-    padding: 2px;
 }
-.btn-pesquisa{
-    height: 100%;
-    border: none;
-    border-radius: 5px;
-    background-color: #fff;
+.pesquisa-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-40%);
+    color: green;
+}
+.pesquisa-icon i {
+    font-size: 16px;
+}
+.icone-preto{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.container-cards {
+    margin-top: 80px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.barra-pesquisa{
-    width: 500px;
-    border-radius: 5px;
-    border: none;
-    padding: 6px;
-    background-color: #fff;
-}
-.img-pesquisa{
-    width: 85%;
-    height: 85%;
-}
-
-.container-cards{
-    display: flex;
-    height: 500px;
-    background-color: rgb(111, 0, 0);
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    max-lines: 2;
 }
-.coluna-cards{
+  
+.card {
     display: flex;
-    flex-direction: column;
+    width: 300px;
+    height: 220px;
+    flex-basis: calc(34% - 10px);
+    background-color: rgb(235, 235, 235);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
 }
-.card{
-    height: 150px;
-    width: 350px;
-    display: flex;
-    background-color: white;
-    margin: 10px;
+.card h1{
+    color:darkgreen;
+    font-weight: 900;
 }
-
-.container{
+.img-personagem{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right: 10px;
+    border-right: 2px solid black;
+}
+.container-imagem{
     display: flex;
-    height: 300px;
-    background-color: rgb(111, 0, 0);
     justify-content: center;
 }
-.img-logo{
-    height: 100%;
+.img-logo {
+    max-height: 50%;
+    max-width: 25%;
+    height: auto;
+    width: auto;
 }
+
+.container-paginacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+.pag-button{
+    padding: 10px;
+    font-weight: 900;
+    color: aliceblue;
+    background-color: darkgreen;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.704);
+}
+.pag-button:hover {
+    background-color:rgb(1, 140, 1);
+}
+
+
 .div-footer{
     display: flex;
-    background-color: aqua;
-    height: 200px;
+    background-color: rgb(21, 38, 23);
+    height: 100%;
+    position: static;
+    z-index: 900;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.autor, .infos{
+    color: grey;
+}
+.infos{
+    display: flex;
+}
+.link-hub {
+    color: rgb(245, 245, 245);
+    font-weight: bold;
+    text-decoration: none;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    font-family:'Montserrat', sans-serif;
+}
+  
+header {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 0.3s;
+}
+  
+  
+footer {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+}
