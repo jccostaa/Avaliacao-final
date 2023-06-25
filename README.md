@@ -17,6 +17,7 @@ Projeto utilizando API do rick e morty, onde voce consegue buscar informações 
 - JavaScript
 - HTML
 - CSS
+- Bootstrap
 - Biblioteca Axios para requisições HTTP
 
 ## Execução
