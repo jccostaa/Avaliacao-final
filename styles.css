@@ -1,115 +1,38 @@
-.header-div{
-    display:flex;
-    background-color: rgb(255, 255, 255);
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 150px;
-    z-index: 900;
-}
-
-.header-div h1{
-    font-size: 50px;
-    color:darkgreen;
+.fonte-rick-e-morty{
     font-family:'Montserrat', sans-serif;
-    margin-top: 110px;
-    margin-bottom: 50px;
-    font-weight: 900;
-    font-size: 70px;
+    font-weight: 900
 }
-.pesquisa {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 10px;
-    border-radius: 10px;
+header{
+    background-color: #fff;
 }
-.pesquisa-input {
-    padding-right: 430px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    font-size: 15px;
-    border-radius: 5px;
-}
-.pesquisa-icon {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-40%);
-    color: green;
-}
-.pesquisa-icon i {
-    font-size: 16px;
-}
-.icone-preto{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
+main{
+    background-image: url('./images/FUNDO.jpg');
+    background-size:cover;
+    background-position:bottom;
+    background-repeat: no-repeat;
 }
 .container-cards {
-    margin-top: 80px;
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     max-lines: 2;
-}
-  
-.card {
-    display: flex;
-    width: 300px;
-    height: 220px;
-    flex-basis: calc(34% - 10px);
-    background-color: rgb(235, 235, 235);
-    margin-top: 20px;
-    margin-bottom: 40px;
-    border-radius: 5px;
-}
-.card h1{
-    color:darkgreen;
-    font-weight: 900;
+    margin-bottom: 700px;
 }
 .img-personagem{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     margin-right: 10px;
-    border-right: 2px solid black;
+    animation-name: fade-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
-.container-imagem{
-    display: flex;
-    justify-content: center;
+.status-personagem{
+    margin-right: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
 }
-.img-logo {
-    max-height: 50%;
-    max-width: 25%;
-    height: auto;
-    width: auto;
-}
-
-.container-paginacao{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 900;
-}
-.pag-button{
-    padding: 10px;
-    font-weight: 900;
-    color: aliceblue;
-    background-color: darkgreen;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.704);
-}
-.pag-button:hover {
-    background-color:rgb(1, 140, 1);
-}
-
-
 .div-footer{
     display: flex;
     background-color: rgb(21, 38, 23);
@@ -131,22 +54,6 @@
     font-weight: bold;
     text-decoration: none;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-    overflow-y: auto;
-    font-family:'Montserrat', sans-serif;
-}
-  
-header {
-    position: static;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: top 0.3s;
-}
-  
   
 footer {
     position: static;
@@ -155,3 +62,49 @@ footer {
     width: 100%;
     height: 200px;
 }
+.imagem-modal{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+}
+.modal-content{
+    animation-name: abertura-modal;
+    animation-duration: 0.5s;
+}
+
+@keyframes abertura-modal {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+p {
+    animation-duration: 0.5s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+  }
